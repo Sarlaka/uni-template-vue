@@ -13,6 +13,8 @@
  */
 
 /* 颜色变量 */
+@import 'uview-ui/theme.scss';
+@import 'styles/mixin.scss'; //项目自定义scss变量
 
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;

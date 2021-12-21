@@ -1,0 +1,171 @@
+.m-div-box {
+    background: #ffffff;
+    border-radius: 16rpx;
+    margin: 32rpx;
+}
+//字体大小
+.m-font-48 {
+    font-size: 48rpx;
+}
+.m-font-40 {
+    font-size: 40rpx;
+}
+.m-font-36 {
+    font-size: 36rpx;
+}
+.m-font-32 {
+    font-size: 32rpx;
+}
+.m-font-28 {
+    font-size: 28rpx;
+}
+.m-font-24 {
+    font-size: 24rpx;
+}
+
+.m-weight-400 {
+    font-family: PingFang SC, PingFangSC-Regular;
+    font-weight: 400;
+}
+.m-weight-500 {
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+}
+// 背景色
+.m-bg-normal {
+    background: $main-color;
+}
+.m-bg-gray {
+    background: $btn-gray;
+}
+.m-bg-disabled {
+    background: $bg-color;
+}
+.m-bg-linear {
+    background: linear-gradient(114.23deg, #21bfb6 0%, #50d6b9 95.52%);
+}
+.m-blue-main {
+    color: $main-color;
+}
+.m-blue1 {
+    color: $tags-agree;
+}
+.m-blue2 {
+    color: $tags-primary;
+}
+.m-green {
+    color: $tags-success;
+}
+.m-orange {
+    color: $tags-warning;
+}
+.m-red {
+    color: $tags-error;
+}
+.m-tips {
+    color: $text-tips;
+}
+.m-content {
+    color: $text-content;
+}
+.m-gray {
+    color: $color-gray;
+}
+
+// 圆角
+.m-b-radius-lg {
+    border-radius: $b-radius-lg;
+}
+.m-b-radius-md {
+    border-radius: $b-radius-md;
+}
+.m-b-radius-sm {
+    border-radius: $b-radius-sm;
+}
+// 白色圆角背景
+.bg-whiter-radius {
+    background-color: #fff;
+    @extend .m-b-radius-sm;
+}
+
+.m-safe-padding {
+    @include x-padding-bottom;
+}
+
+.m-position-center {
+    @extend %position-center;
+}
+//超出隐藏
+.m-text-hide {
+    @extend %text-hide;
+}
+
+.m-b-t {
+    border-top: 1px solid $text-light;
+}
+.m-b-b {
+    border-bottom: 1px solid $text-light;
+}
+.m-b-l {
+    border-left: 1px solid $text-light;
+}
+.m-b-r {
+    border-right: 1px solid $text-light;
+}
+
+// flex
+
+.m-flex {
+    display: flex;
+}
+
+.m-flex-1 {
+    flex: 1;
+}
+.m-flex-none {
+    flex: none;
+}
+.m-flex-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.m-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-flex-align-center {
+    display: flex;
+    align-items: center;
+}
+.m-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.m-flex-align-start {
+    display: flex;
+    align-items: flex-start;
+}
+.m-flex-align-end {
+    display: flex;
+    align-items: flex-end;
+}
+.m-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-bg-1 {
+    background: rgba(234, 245, 255, 1) !important;
+}
+.img-bg-2 {
+    background: rgba(230, 251, 248, 1) !important;
+}
+.img-bg-3 {
+    background: rgba(254, 240, 239, 1) !important;
+}

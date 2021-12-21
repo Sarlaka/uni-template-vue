@@ -1,0 +1,126 @@
+// 用于修改uview的样式
+// 修改底部弹框取消、确定按钮样式
+.u-select,
+.u-datetime-picker {
+    &__header,
+    .u-picker-header {
+        height: inherit !important;
+        padding: 32rpx !important;
+    }
+    &__header__title,
+    .u-picker__title {
+        font-size: 32rpx;
+        font-weight: 500;
+        color: #000000 !important;
+    }
+
+    &__header__btn,
+    .u-btn-picker {
+        border-radius: 100rpx;
+        font-size: 26rpx;
+        padding: 14rpx 40rpx !important;
+    }
+
+    &__header__cancel,
+    .u-btn-picker--tips {
+        background: $bg-color;
+        color: $text-content !important;
+    }
+
+    &__header__confirm,
+    .u-btn-picker--primary {
+        // background: $tags-success;
+        background: #2962ff;
+        color: $color-white !important;
+    }
+
+    &__body__picker-view__item {
+        font-weight: 500;
+    }
+}
+
+.u-upload {
+    display: flex;
+    justify-content: flex-start;
+    .u-list-item {
+        overflow: unset;
+        margin: unset;
+        border: none;
+    }
+    .u-delete-icon {
+        top: -10rpx;
+        right: -20rpx;
+        width: 40rpx;
+        height: 40rpx;
+    }
+}
+
+/* #ifndef APP-NVUE */
+::-webkit-scrollbar,
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+}
+/* #endif */
+
+/* #ifdef H5 */
+// 通过样式穿透，隐藏H5下，scroll-view下的滚动条
+scroll-view ::v-deep ::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+}
+/* #endif */
+
+.u-popup__content {
+    border-top-left-radius: 40rpx;
+    border-top-right-radius: 40rpx;
+}
+
+.m-send-modal {
+    .u-popup__content {
+        background: $bg-color !important;
+    }
+}
+
+.u-toolbar {
+    height: 60px !important;
+}
+
+.u-toolbar__wrapper__cancel {
+    width: 132rpx;
+    height: 62rpx;
+    border-radius: 100rpx;
+    margin-left: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color;
+    color: $color-gray !important;
+    padding: 0 !important;
+    @include font-size(28);
+}
+.u-toolbar__wrapper__confirm {
+    width: 132rpx;
+    height: 62rpx;
+    border-radius: 100rpx;
+    margin-right: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-color;
+    color: #fff !important;
+    padding: 0 !important;
+    @include font-size(28);
+}
+
+.u-toolbar__title {
+    color: $text-title;
+    @include font-size(32, 500);
+}

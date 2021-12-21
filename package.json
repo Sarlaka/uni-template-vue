@@ -41,7 +41,10 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "deploy:dev": "npm run dev:mp-weixin",
+    "deploy:test": "cross-env NODE_ENV=test UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "deploy:prod": "npm run build:mp-weixin"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.1-32920211122003",
@@ -88,6 +91,8 @@
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^10.2.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

@@ -1,5 +1,5 @@
 {
-	"name": "",
+	"name": "uni-template-vue",
 	"appid": "",
 	"description": "",
 	"versionName": "1.0.0",
@@ -54,11 +54,13 @@
 
 	},
 	"mp-weixin": { /* 微信小程序特有相关 */
-		"appid": "",
-		"setting": {
-			"urlCheck": false
-		},
-		"usingComponents": true
+		"appid" : "wxf68236822f00a29b",
+        "setting" : {
+            "urlCheck" : false,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true
 	},
 	"mp-alipay" : {
         "usingComponents" : true
