@@ -1,3 +1,6 @@
 [submodule "src/components"]
 	path = src/components
 	url = http://gitlab.gemii.cc:8000/liz-medicine-healthy/ui-library/uni-components.git
+[submodule "src/uview-ui"]
+	path = src/uview-ui
+	url = http://gitlab.gemii.cc:8000/liz-medicine-healthy/ui-library/uview-ui-gemii.git
